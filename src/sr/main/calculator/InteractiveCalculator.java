@@ -36,7 +36,12 @@ public class InteractiveCalculator {
 			break;
 		case 4 :
 			DivOperation div = new DivOperation (A,B);
-			System.out.println("Quotient ="+ div.quotient());
+			if (B==0)
+				{System.out.println("invalid entry"); 
+				break;}
+			
+			else 
+				System.out.println("Quotient ="+ div.quotient());
 			break;
 		default :
 			System.out.println("invalid entry");
